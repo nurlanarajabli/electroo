@@ -1,0 +1,891 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+header .headerTop {
+  width: 100%;
+  height: 36px;
+  background-color: #1e1f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headerTop .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerTop .container .contactBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+header .headerTop .container .contactBox p {
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  transition: 1s;
+  display: flex;
+  gap: 6px;
+}
+header .headerTop .container .contactBox p:hover {
+  cursor: pointer;
+  color: rgb(209, 0, 36);
+  transition: 1s;
+}
+header .headerTop .container .contactBox p i {
+  color: rgb(209, 0, 36);
+}
+header .headerTop .container .accountBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13%;
+}
+header .headerTop .container .accountBox p {
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  transition: 1s;
+  display: flex;
+  gap: 6px;
+}
+header .headerTop .container .accountBox p:hover {
+  cursor: pointer;
+  color: rgb(209, 0, 36);
+  transition: 1s;
+}
+header .headerTop .container .accountBox p i {
+  color: rgb(209, 0, 36);
+}
+header .headerBottom {
+  width: 100%;
+  height: 90px;
+  background-color: #15161d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .headerBottom .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerBottom .container .logo {
+  width: 14%;
+}
+header .headerBottom .container .logo img {
+  width: 100%;
+}
+header .headerBottom .container .searchBox {
+  width: 50%;
+}
+header .headerBottom .container .searchBox .searchBoxx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headerBottom .container .searchBox .searchBoxx #inputSelect {
+  padding: 9px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 30%;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  border: none;
+}
+header .headerBottom .container .searchBox .searchBoxx input {
+  width: 50%;
+  padding: 9px;
+  font-size: 14px;
+}
+header .headerBottom .container .searchBox .searchBoxx input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.766);
+}
+header .headerBottom .container .searchBox .searchBoxx button {
+  padding: 10px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: 20%;
+  border: none;
+  background-color: rgb(209, 0, 36);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+header .headerBottom .container .searchBox .searchBoxx button:hover {
+  cursor: pointer;
+}
+header .headerBottom .container .iconBox {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerBottom .container .iconBox .iconOne {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+}
+header .headerBottom .container .iconBox .iconOne i {
+  color: white;
+}
+header .headerBottom .container .iconBox .iconOne span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+header .headerBottom .container .iconBox .iconOne .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 20px;
+  position: absolute;
+  bottom: 25px;
+  right: 13px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: rgb(209, 0, 36);
+  border-radius: 50%;
+  color: white;
+}
+header .headerBottom .container .iconBox .iconTwo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+}
+header .headerBottom .container .iconBox .iconTwo i {
+  color: white;
+}
+header .headerBottom .container .iconBox .iconTwo span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+header .headerBottom .container .iconBox .iconTwo .two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 20px;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  background-color: rgb(209, 0, 36);
+  border-radius: 50%;
+  color: white;
+}
+
+#navBar {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navBar .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navBar .container nav {
+  width: 60%;
+}
+#navBar .container nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navBar .container nav ul .home a {
+  color: rgb(209, 0, 36);
+  border-bottom: rgb(209, 0, 36) 2px solid;
+}
+#navBar .container nav ul li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+#navBar .container nav ul li a {
+  text-decoration: none;
+  color: #4f5059;
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+#navBar .container nav ul li a:hover {
+  transition: 1s;
+  color: rgb(209, 0, 36);
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+
+#collections {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#collections .collectionCards {
+  margin: 40px 0;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#collections .collectionCards .collectionCard {
+  background-color: #d4dae7;
+  width: 30%;
+  position: relative;
+}
+#collections .collectionCards .collectionCard .collectionCardImg {
+  width: 100%;
+}
+#collections .collectionCards .collectionCard .collectionCardImg img {
+  width: 100%;
+}
+#collections .collectionCards .collectionCard .collectionCardText {
+  background-color: rgba(206, 17, 49, 0.9450980392);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  bottom: 0px;
+  clip-path: polygon(0% 0%, 90% 0%, 30% 100%, 0% 100%);
+}
+#collections .collectionCards .collectionCard .collectionCardText h2 {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+#collections .collectionCards .collectionCard .collectionCardText p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+#newProducts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+#newProducts .newProductsText {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newProducts .newProductsText h1 {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+}
+#newProducts .newProductsText nav {
+  width: 35%;
+}
+#newProducts .newProductsText nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newProducts .newProductsText nav ul .laptops a {
+  color: rgb(209, 0, 36);
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+#newProducts .newProductsText nav ul li {
+  list-style: none;
+}
+#newProducts .newProductsText nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(141, 153, 174);
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+#newProducts .newProductsText nav ul li a:hover {
+  transition: 1s;
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+#newProducts .newProductsCards {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  gap: 10px;
+}
+#newProducts .newProductsCards .newProductCard {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgba(128, 128, 128, 0.368);
+  transition: 1s;
+}
+#newProducts .newProductsCards .newProductCard:hover {
+  transition: 1s;
+  border: 2px solid rgba(209, 0, 35, 0.379);
+}
+#newProducts .newProductsCards .newProductCard .cardImage {
+  width: 100%;
+}
+#newProducts .newProductsCards .newProductCard .cardImage img {
+  width: 100%;
+  height: 200px;
+}
+#newProducts .newProductsCards .newProductCard .cardText {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+#newProducts .newProductsCards .newProductCard .cardText p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+#newProducts .newProductsCards .newProductCard .cardText h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+  transition: 1s;
+}
+#newProducts .newProductsCards .newProductCard .cardText h4:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(209, 0, 36);
+}
+#newProducts .newProductsCards .newProductCard .cardText span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(209, 0, 36);
+}
+#newProducts .newProductsCards .newProductCard .cardText span del {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+#newProducts .newProductsCards .newProductCard .cardText .cardIcons {
+  width: 95%;
+  border-top: 1px solid rgba(128, 128, 128, 0.368);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+#newProducts .newProductsCards .newProductCard .cardText .cardIcons i {
+  transition: 1s;
+  font-size: 11px;
+  border-radius: 50%;
+}
+#newProducts .newProductsCards .newProductCard .cardText .cardIcons i:hover {
+  transition: 1s;
+  background-color: rgba(128, 128, 128, 0.368);
+  color: rgb(209, 0, 36);
+}
+
+#hotDealThisWeek {
+  background-image: url("/assets/image/hotdeal.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hotDealThisWeek .container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hotDealThisWeek .container .hotDealThisWeekText {
+  margin: 40px 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+#hotDealThisWeek .container .hotDealThisWeekText .getHours {
+  width: 70%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#hotDealThisWeek .container .hotDealThisWeekText .getHours span {
+  background-color: #d31737;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hotDealThisWeek .container .hotDealThisWeekText .getHours span p {
+  font-size: 10px;
+  font-weight: 400;
+}
+#hotDealThisWeek .container .hotDealThisWeekText h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+}
+#hotDealThisWeek .container .hotDealThisWeekText h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+#hotDealThisWeek .container .hotDealThisWeekText button {
+  background-color: rgb(209, 0, 36);
+  color: white;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+}
+#hotDealThisWeek .container .hotDealThisWeekText button:hover {
+  cursor: pointer;
+}
+
+#topSelling {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+}
+#topSelling .topSellingText {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topSelling .topSellingText h1 {
+  width: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+}
+#topSelling .topSellingText nav {
+  width: 35%;
+}
+#topSelling .topSellingText nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topSelling .topSellingText nav ul .laptops a {
+  color: rgb(209, 0, 36);
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+#topSelling .topSellingText nav ul li {
+  list-style: none;
+}
+#topSelling .topSellingText nav ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(141, 153, 174);
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+#topSelling .topSellingText nav ul li a:hover {
+  transition: 1s;
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+#topSelling .topSellingCards {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+#topSelling .topSellingCards .topSellingCard {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgba(128, 128, 128, 0.368);
+  transition: 1s;
+}
+#topSelling .topSellingCards .topSellingCard:hover {
+  transition: 1s;
+  border: 2px solid rgba(209, 0, 35, 0.379);
+}
+#topSelling .topSellingCards .topSellingCard .cardImage {
+  width: 100%;
+}
+#topSelling .topSellingCards .topSellingCard .cardImage img {
+  width: 100%;
+}
+#topSelling .topSellingCards .topSellingCard .cardText {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+#topSelling .topSellingCards .topSellingCard .cardText p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+#topSelling .topSellingCards .topSellingCard .cardText h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+  transition: 1s;
+}
+#topSelling .topSellingCards .topSellingCard .cardText h4:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(209, 0, 36);
+}
+#topSelling .topSellingCards .topSellingCard .cardText span {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(209, 0, 36);
+}
+#topSelling .topSellingCards .topSellingCard .cardText span del {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+#topSelling .topSellingCards .topSellingCard .cardText .cardIcons {
+  width: 95%;
+  border-top: 1px solid rgba(128, 128, 128, 0.368);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+#topSelling .topSellingCards .topSellingCard .cardText .cardIcons i {
+  transition: 1s;
+  font-size: 11px;
+  border-radius: 50%;
+}
+#topSelling .topSellingCards .topSellingCard .cardText .cardIcons i:hover {
+  transition: 1s;
+  background-color: rgba(128, 128, 128, 0.368);
+  color: rgb(209, 0, 36);
+}
+
+#topSellings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.352);
+}
+#topSellings .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+#topSellings .container .topSellingCardsContainer {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+#topSellings .container .topSellingCardsContainer h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardImg {
+  width: 20%;
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardImg img {
+  width: 100%;
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText {
+  width: 60%;
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText p {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(43, 45, 66);
+  transition: 1s;
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText h4:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(209, 0, 36);
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText span {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(209, 0, 36);
+}
+#topSellings .container .topSellingCardsContainer .topSellingCard .cardText span del {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(141, 153, 174);
+}
+
+#newsLetter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(209, 0, 36);
+}
+#newsLetter .container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  gap: 25px;
+}
+#newsLetter .container h2 {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newsLetter .container .searchBoxx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#newsLetter .container .searchBoxx input {
+  padding: 9px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: 60%;
+  padding: 9px;
+  font-size: 14px;
+  border: 1px solid rgba(128, 128, 128, 0.375);
+  outline: none;
+}
+#newsLetter .container .searchBoxx input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 0.766);
+}
+#newsLetter .container .searchBoxx button {
+  padding: 10px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: 40%;
+  border: none;
+  background-color: rgb(209, 0, 36);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+#newsLetter .container .searchBoxx button:hover {
+  cursor: pointer;
+}
+#newsLetter .container .searchBoxx button i {
+  color: white;
+}
+#newsLetter .container .iconBox {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newsLetter .container .iconBox .icons {
+  border: 1px solid rgba(128, 128, 128, 0.377);
+  padding: 10px;
+  width: 20%;
+  transition: 1s;
+  color: rgb(51, 51, 51);
+}
+#newsLetter .container .iconBox .icons:hover {
+  cursor: pointer;
+  color: rgb(209, 0, 36);
+  transition: 1s;
+  background-color: rgba(128, 128, 128, 0.377);
+}
+
+footer {
+  width: 100%;
+}
+footer .footerTop {
+  width: 100%;
+  background-color: #15161d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerTop .footerCards {
+  margin: 40px 0;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerTop .footerCards .footerAboutUs {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footerTop .footerCards .footerAboutUs h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+footer .footerTop .footerCards .footerAboutUs p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(185, 186, 188);
+}
+footer .footerTop .footerCards .footerAboutUs .contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(185, 186, 188);
+}
+footer .footerTop .footerCards .footerAboutUs .contactBox p {
+  transition: 1s;
+}
+footer .footerTop .footerCards .footerAboutUs .contactBox p i {
+  color: rgb(209, 0, 36);
+}
+footer .footerTop .footerCards .footerAboutUs .contactBox p:hover {
+  cursor: pointer;
+  transition: 1s;
+  color: rgb(209, 0, 36);
+}
+footer .footerTop .footerCards .footerCard {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .footerTop .footerCards .footerCard h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+footer .footerTop .footerCards .footerCard ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+footer .footerTop .footerCards .footerCard ul li {
+  list-style: none;
+}
+footer .footerTop .footerCards .footerCard ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(185, 186, 188);
+  transition: 1s;
+}
+footer .footerTop .footerCards .footerCard ul li a:hover {
+  transition: 1s;
+  color: rgb(209, 0, 36);
+  cursor: pointer;
+}
+footer .footerBottom {
+  width: 100%;
+  background-color: #1e1f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerBottom .container {
+  margin: 40px 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px 0;
+}
+footer .footerBottom .container .iconBox {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footerBottom .container .iconBox i {
+  font-size: 35px;
+  color: #15161d;
+}
+footer .footerBottom .container .footerBottomText h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(185, 186, 188);
+}
